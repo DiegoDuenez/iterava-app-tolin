@@ -1,4 +1,6 @@
+@extends('layouts.app')
 
+@section('content')
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,9 +11,10 @@
 </head>
 <body>
 
-    <div id="app">
+    <landing-component></landing-component>
 
-    </div>
+
     
 </body>
 </html>
+@endsection
