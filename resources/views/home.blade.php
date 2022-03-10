@@ -17,7 +17,6 @@
                     {{ __('You are logged in!') }}
                 </div>
 
-                <landing-component></landing-component>
 
             </div>
         </div>

@@ -13,8 +13,6 @@
 
     <landing-component></landing-component>
 
-
-    
 </body>
 </html>
 @endsection
