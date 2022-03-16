@@ -1,0 +1,61 @@
+/*
+* ---------------------------------
+* Global iterava styles
+* ---------------------------------
+*
+
+*/
+
+
+:root{
+
+     /*COLORS*/
+    --orange-100: #feac00;
+    --orange-200: #fd8000;
+    --orange-300: #fd8000;
+    --fucsia-100: #d1014c;
+    --fucsia-200: #550a3c;
+
+    /* FONTS */
+    --it-title: 4rem;
+    --it-subtitle: 2rem;
+    --it-text: 1.2rem;
+}
+
+
+
+/* CONFIG */
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    
+}
+
+body{
+    position: relative;
+}
+
+body>div {
+    overflow: hidden !important;
+}
+body>section {
+    overflow: hidden !important;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/*
+div{
+    overflow: hidden !important;
+}
+
+section{
+    overflow: hidden !important;
+}*/
