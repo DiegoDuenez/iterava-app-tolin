@@ -12,7 +12,7 @@
 <body>
 
     <landing-component></landing-component>
-
+    <info-landing-component></info-landing-component>
 </body>
 </html>
 @endsection

@@ -1,60 +1,34 @@
 <template>
     
     <div class="landing" >
-        <div class="landing__nav">
-            <!--<p style="color: white; font-size: var(--it-text)">
-                <a href="" class="landing__link">Login</a>|<a href="" class="landing__link">Registrarse</a>
-            </p>-->
-            <a href="" class="landing__link">Login</a>
-            <span>|</span>
-            <a href="" class="landing__link">Registrarse</a>
-
-            
-        </div>
-        <div class="landing__mask">
-            <div class="landing__logo">
-                <img src="assets/logo.png" alt="">
+        <div class="landing__container">
+            <div class="landing__nav">
+                <a href="" class="landing__link">Login</a>
+                <span>|</span>
+                <a href="" class="landing__link">Registrarse</a>
             </div>
-            <div class="landing__search">
-                <input type="search" name="" id="" class="landing__input" placeholder="¿Qué estas buscando?">
-                <button class="landing__search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
-            </div>
-            <div class="landing__description">
-                <p class="landing__text">Bienvenid@ a Iterava, donde puedes conocer con tan solo un clic los lugares más maravillosos al rededor del mundo,
-                    todo esto en un mismo sitio, encuentralo aquí.
-                </p>
-                <button class="landing__button landing__button--orange">EMPEZAR</button>
-            </div>
-        </div>
-
-        <video autoplay muted loop id="myVideo" class="landing__video">
-                <source src="assets/video1.mp4" type="video/mp4">
-        </video>
-        
-        <!--<div class="landing__banner">
-            <video autoplay muted loop id="myVideo" class="landing__video">
-                    <source src="assets/video1.mp4" type="video/mp4">
-            </video>
             <div class="landing__mask">
-
+                <div class="landing__logo">
+                    <img src="assets/logo.png" alt="">
+                </div>
+                <div class="landing__search">
+                    <input type="search" name="busqueda" id="busqueda" autofocus class="landing__input" placeholder="¿Qué estas buscando?">
+                    <button class="landing__search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+                <div class="landing__description">
+                    <p class="landing__text">Bienvenid@ a Iterava, donde puedes conocer con tan solo un clic los lugares más maravillosos al rededor del mundo,
+                        todo esto en un mismo sitio, encuentralo aquí.
+                    </p>
+                    <button class="landing__button landing__button--orange">EMPEZAR</button>
+                </div>
             </div>
-            <div class="landing__logo">
-                <img src="assets/logo.png" alt="">
-            </div>
-             <div class="landing__search">
-                <p>OLa</p>
-            </div>
-        </div>-->
-       
-        <!--<div class="landing__banner">
             <video autoplay muted loop id="myVideo" class="landing__video">
                     <source src="assets/video1.mp4" type="video/mp4">
             </video>
         </div>
-        <div class="landing__search">
-            <p>HOla</p>
-        </div>-->
+        
     </div>
+    
 
 </template>
 
@@ -66,9 +40,12 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 
-   
+   .landing__container{
+       display: flex;
+       width: 100%;
+   }
 
     .landing{
         position: relative;
