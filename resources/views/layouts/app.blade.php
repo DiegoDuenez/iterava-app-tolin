@@ -7,7 +7,9 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <!--<title>{{ config('app.name', 'Laravel') }}</title>-->
+    
+    <title>Iterava</title>
 
     <!-- Scripts -->
     <!--<script src="{{ asset('js/app.js') }}" defer></script>-->
@@ -20,11 +22,14 @@
     <!-- Styles -->
     <!--<link rel="stylesheet" href="{{ asset('css/app.css') }}">-->
     <link rel="stylesheet" href="{{ mix('css/app.css') }}" />
+    <link rel="stylesheet" href="css/iterava.css" />
+
 
 </head>
 <body>
     <div id="app">
-        
+    <router-view></router-view>
+  
         <!--<nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">

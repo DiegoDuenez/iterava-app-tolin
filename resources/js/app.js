@@ -5,6 +5,8 @@
  */
 
 require('./bootstrap');
+import Vue from 'vue';
+import VueRouter from 'vue-router';
 
 window.Vue = require('vue').default;
 
@@ -18,8 +20,9 @@ window.Vue = require('vue').default;
 
 // const files = require.context('./', true, /\.vue$/i)
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
-
-Vue.component('landing-component', require('./components/Landing/LandingPageComponent.vue').default);
+Vue.use(VueRouter);
+//Vue.component('landing-component', require('./components/Landing/LandingPageComponent.vue').default);
+//Vue.component('Register-component', require('./components/Landing/LandingPageComponent.vue'));
 
 
 /**
@@ -28,6 +31,17 @@ Vue.component('landing-component', require('./components/Landing/LandingPageComp
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
+const routes =[
+    {path: '/', component: require('./components/Landing/LandingPageComponent.vue').default},
+    {path: '/registro', component: require('./components/Session/RegisterPageComponent.vue').default}
+]
+
+const router = new VueRouter({
+    routes: routes,
+    mode:"history"
+})
+
 const app = new Vue({
-    el: '#app',
-});
+    router
+    //,el: '#app'
+}).$mount('#app')

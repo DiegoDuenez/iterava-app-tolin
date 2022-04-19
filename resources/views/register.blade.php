@@ -11,7 +11,7 @@
 </head>
 <body>
 
-<landing-component></landing-component>
+    <landing-component></landing-component>
 
 </body>
 </html>
