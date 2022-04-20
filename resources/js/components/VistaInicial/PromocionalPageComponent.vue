@@ -86,8 +86,10 @@
                     <div class="card-body text-light" style="text-align: center;">
                         <h1 class="card-title">¡UPS!</h1>
                         <p class="card-text">¿quieres ver más?</p>
-                        <a href="#" class="">Iniciar Sesión</a>
-                        <a href="#" class="">Registrarme</a>
+                        <router-link   to="/registro">Iniciar Sesión</router-link>
+                        <router-link   to="/registro">Registrarme</router-link>
+                        <!--<a href="#" class=""></a>
+                        <a href="#" class=""></a>-->
                         </div>
                     </div>
                     

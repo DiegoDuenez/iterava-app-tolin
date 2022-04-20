@@ -35,7 +35,8 @@ const routes =[
     {path: '/', component: require('./components/Landing/LandingPageComponent.vue').default},
     {path: '/registro', component: require('./components/Session/RegisterPageComponent.vue').default},
     {path: '/busqueda', component: require('./components/VistaInicial/PromocionalPageComponent.vue').default},
-    {path: '/Main', component: require('./components/Main/MainPageComponent.vue').default}
+    {path: '/Main', component: require('./components/Main/MainPageComponent.vue').default},
+    {path: '/Favoritos', component: require('./components/Vistas/FavoritosPageComponent.vue').default}
 ]
 
 const router = new VueRouter({
