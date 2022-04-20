@@ -7,8 +7,7 @@
             </p>-->
             <router-link class="landing__link" to="/registro">Login</router-link>
             <span>|</span>
-            <a href="" class="landing__link">Registrarse</a>
-            
+            <router-link class="landing__link" to="/registro">Registrarse</router-link>
             
         </div>
         <div class="landing__mask">
@@ -17,13 +16,17 @@
             </div>
             <div class="landing__search">
                 <input type="search" name="" id="" class="landing__input" placeholder="¿Qué estas buscando?">
-                <button class="landing__search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <button class="landing__search-button"><router-link class="fa-solid fa-magnifying-glass"  to="/busqueda"></router-link></button>
+                <!-- <button class="landing__search-button"><i class="fa-solid fa-magnifying-glass"></i></button>-->
             </div>
             <div class="landing__description">
                 <p class="landing__text">Bienvenid@ a Iterava, donde puedes conocer con tan solo un clic los lugares más maravillosos al rededor del mundo,
                     todo esto en un mismo sitio, encuentralo aquí.
                 </p>
-                <button class="landing__button landing__button--orange">EMPEZAR</button>
+                <!--<button class="landing__button landing__button--orange">EMPEZAR</button>
+                <a href="destino.php"><input type="button" value="Ir"></a>-->
+                <router-link  to="/registro"><input class="landing__button landing__button--orange" type="button" value="EMPEZAR"></router-link>
+                
             </div>
         </div>
 
