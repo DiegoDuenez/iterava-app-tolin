@@ -9,11 +9,13 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link disabled" aria-current="page" href="#">Home</a>
+                     <li class="nav-item">
+                        <router-link class="nav-link" aria-current="page" to="/Main">Home</router-link>
+                       <!-- <a class="nav-link disabled" aria-current="page" href="#">Home</a>-->
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Perfil</a>
+                        <router-link class="nav-link" aria-current="page" to="/Perfil">Perfil</router-link>
+                        <!--<a class="nav-link" href="#">Perfil</a>-->
                     </li>
                     <li class="nav-item">
                         <form class="d-flex">
