@@ -31,14 +31,15 @@ Vue.use(VueRouter);
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-const routes =[
-    {path: '/', component: require('./components/Landing/LandingPageComponent.vue').default},
-    {path: '/registro', component: require('./components/Session/RegisterPageComponent.vue').default}
+const routes = [
+    { path: '/', component: require('./components/Landing/LandingPageComponent.vue').default },
+    { path: '/registro', component: require('./components/Session/RegisterPageComponent.vue').default },
+    { path: '/resultados', component: require('./components/Results/SearchResultsComponent.vue').default }
 ]
 
 const router = new VueRouter({
     routes: routes,
-    mode:"history"
+    mode: "history"
 })
 
 const app = new Vue({
