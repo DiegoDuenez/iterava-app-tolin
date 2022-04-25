@@ -1,5 +1,5 @@
 <template>
-    
+
     <div class="landing" >
         <div class="landing__nav">
             <!--<p style="color: white; font-size: var(--it-text)">
