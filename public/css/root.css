@@ -1,0 +1,16 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --gray_243:rgb(243, 243, 243);
+    --gray_233:rgb(233, 233, 233);
+    --gray_163:rgb(163, 163, 163);
+
+    --pink_184:rgb(184, 28, 54);
+
+
+}

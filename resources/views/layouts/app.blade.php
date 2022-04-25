@@ -9,11 +9,14 @@
 
     <!--<title>{{ config('app.name', 'Laravel') }}</title>-->
     
-    <title>Iterava</title>
-
+    <title>I T E R A V A </title>
+    <link rel="icon" type="image/png" href="assets/Iteravia.png">
     <!-- Scripts -->
     <!--<script src="{{ asset('js/app.js') }}" defer></script>-->
     <script defer src="{{ mix('js/app.js') }}"></script>
+    <!-- JQuery -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -21,14 +24,32 @@
 
     <!-- Styles -->
     <!--<link rel="stylesheet" href="{{ asset('css/app.css') }}">-->
-    <link rel="stylesheet" href="{{ mix('css/app.css') }}" />
     <link rel="stylesheet" href="css/iterava.css" />
+    <link rel="stylesheet" href="{{ mix('css/app.css') }}" />
+    
+    <!-- Iconos - font-awesome6 -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+   <!-- SweetAlert2 -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.1.9/sweetalert2.min.css" integrity="sha512-cyIcYOviYhF0bHIhzXWJQ/7xnaBuIIOecYoPZBgJHQKFPo+TOBA+BY1EnTpmM8yKDU4ZdI3UGccNGCEUdfbBqw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+   <!-- JQuery -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!--Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <!-- SweetAlert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.9/dist/sweetalert2.all.min.js"></script>
+    <script src="js/register.js"></script>
+   <!--Favoritos-->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/root.css"/>
+    <link rel="stylesheet" href="css/favorito.css"/>
 
 </head>
 <body>
     <div id="app">
-    <router-view></router-view>
+    
+
   
         <!--<nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
@@ -80,10 +101,11 @@
                 </div>
             </div>
         </nav>-->
-
-        <main class="py-4">
+        <main class="py-4" style="margin-top:-25px;">
             @yield('content')
         </main>
+        <router-view></router-view>
     </div>
 </body>
-</html>
+<!--<script src="index.js"></script>-->
+ </html>
